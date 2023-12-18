@@ -1,0 +1,425 @@
+h1,h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e9e9e9;
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+#background-img {
+  background-image: url(local/galeria/pordosol-bg.png);
+  max-width: 100%;
+}
+
+#navbar {
+  background-color: #161616; /* Cor de fundo da barra de navegação */
+}
+
+.navbar-brand {
+  margin-right: auto; /* Coloca a logo à direita */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Espaçamento entre os itens de navegação */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.imagem-com-texto {
+  position: relative;
+  max-width: 100%;
+}
+
+.retangulos {
+  width: 81px;
+  height: 104px;
+}
+
+.modaltitulo {
+  position: absolute;
+  transform: translateX(0%);
+  z-index: 2;
+  margin-top: -6.5%;
+  margin-left: 2%;
+  color: #161616;
+  font-weight: bolder;
+  font-size: 48px;
+}
+
+.apresentacao {
+  width: 80%;
+}
+
+.video {
+  width: 90%;
+}
+
+.ml-6 {
+  margin-left: 6rem !important;
+}
+
+.ml-n10 {
+  margin-left: -10rem !important;
+}
+
+.mt-6 {
+  margin-top: 3.5rem !important;
+}
+
+.mt-7 {
+  margin-top: 7rem !important;
+}
+
+.mt-8 {
+  margin-top: 8.3rem !important;
+}
+
+.mt-n7 {
+  margin-top: -7rem !important;
+}
+
+.mt-n3 {
+  margin-top: -3rem !important;
+}
+
+.mt-n5 {
+  margin-top: -5rem !important;
+}
+
+.mt-10 {
+  margin-top: 10rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 8rem !important;
+}
+
+.mr-7 {
+  margin-right: 7rem;
+}
+
+.container {
+  width: 100%;
+}
+
+.duracao {
+  width: 250px;
+}
+
+.barra {
+  width: 250px;
+  height: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  display: flex;
+}
+
+progress {
+  height: 8.5px;
+  width: 100%;
+}
+
+@media (max-width: 460px) {
+  .video {
+    width: 100%;
+  }
+
+  .apresentacao {
+    width: 100%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .duracao {
+    width: 100%;
+  }
+
+  .hide-on-small-screen {
+    display: none !important;
+  }
+
+  .colunas{
+    margin-left: 3rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .colunas{
+    margin-left: 3rem !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .colunas{
+    margin-left: 7rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cont {
+  width: 90%;
+  height: 100%;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 15px;
+  /*margin: 5px 0 22px 0; Essa parte estava alterando o botão do footer */
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  background-color: #ddd;
+  border-color: #face32;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #faaa32;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 27%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.current-day {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#calendar {
+  max-width: 1110px;
+  max-height: 450px;
+  background-color: #f5f5f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+
+#fc-button {
+  align-items: center;
+}
+
+#big-banner {
+  background-image: url(local/galeria/pordosol-bg.png);
+  background-size: 100%;
+}
+
+.fc-list-heading td {
+  color: white; /* Define a cor do texto para branco */
+}
+
+/* Reset de estilos para a lista */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  list-style: none; /* Remover a estilização padrão de lista */
+  display: flex; /* Exibir os itens em uma linha */
+  align-items:center; /* Alinhar verticalmente os itens ao centro */
+}
+
+.list-item::before {
+  content: "\2022"; /* Código do caractere de bolinha */
+  color: #ffc107; /* Cor da bolinha (amarelo no estilo do Bootstrap) */
+  font-size: 3em; /* Ajuste o tamanho da bolinha conforme necessário */
+  line-height: 0; /* Ajuste o espaçamento vertical */
+
+}
+
+
+/*teste card*/
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 20rem;
+  max-width: 320px;
+  width:300px;
+  margin: 2rem;
+  box-shadow: none;
+  background: none;
+  cursor:pointer;
+  
+}
+
+.card-side {
+  height: 20rem;
+  border-radius: 3px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding:2rem;
+  color: white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+  background-image:linear-gradient(to right top,#ffc107,#FF9900);
+}
+
+#card1 .card-side.front {
+  background-image: url(local/cards/celula.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#card2 .card-side.front {
+  background-image: url(local/cards/adoracao.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#card3 .card-side.front {
+  background-image: url(local/cards/estudos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#card4 .card-side.front {
+  background-image: url(local/cards/jogos_online.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#card5 .card-side.front {
+  background-image: url(local/cards/esportes.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#card6 .card-side.front {
+  background-image: url(local/cards/eventos_diversos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Um valor alto o suficiente */
+}
+
+.newsletter-form {
+  z-index: 999; /* Um valor menor que o z-index do modal */
+}
+
+@media (max-width: 767px) {
+  .modal-content {
+    width: 100%;
+    max-width: none; /* Certifique-se de que a largura máxima seja removida para ocupar 100% */
+  }
+}
+
+.navbar-nav li {
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.navbar-nav a:hover {
+  background-color: #333; /* Cor de destaque ao passar o mouse */
+}
